@@ -32,4 +32,11 @@ p.h2 { font-weight:bold; }
 
 11. E[att] --属性的或运算，匹配所有具有att属性的E元素，不考虑它的值
 12. E[att1][att2] --属性的与运算，匹配所有具有att1和att2属性的E元素
-13. 
+13. E[att=val] --匹配所有att属性等于"val"的E元素
+14. E[att~=val] --匹配所有att属性具有多个空格分隔的值、其中一个值等于"val"的E元素
+15. E[att|=val]	--匹配所有att属性具有多个连字号 - （hyphen-separated）分隔的值、其中一个值以"val"开头的E元素，主要用于lang属性，比如"en"、"en-us"、"en-gb"等等
+16. E[att^="val"]	--属性att的值以"val"开头的元素
+17. E[att$="val"]	--属性att的值以"val"结尾的元素
+18. E[att*="val"]	--属性att的值包含"val"字符串的元素
+
+实例：</br>
