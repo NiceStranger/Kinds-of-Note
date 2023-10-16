@@ -57,6 +57,12 @@ h2[class*="title"] { color:red; }
 21. a:active --用来定义鼠标已经在其上按下，但还没有释放的超链接样式</br>
 22. a:hover --用来定义鼠标悬停其上时的样式</br>
 23. input:focus --用于选择获得焦点的表单元素</br>
-
+</br>
  实例：</br>
- 
+ input[type=text]:focus { color:#000; background:#ffe; }</br>
+
+ <h4>结构伪类选择器</h4>
+ 24. E:first-child --匹配父元素的第一个子元素E</br>
+ 25. E:last-child --匹配父元素的最后一个子元素E</br>
+ 26. E:nth-child(n) --匹配其父元素的第n个子元素，第一个编号为1</br>
+ 27. E:nth-last-child(n)	匹配其父元素的倒数第n个子元素，第一个编号为1</br>
