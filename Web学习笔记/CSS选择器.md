@@ -74,5 +74,10 @@ h2[class*="title"] { color:red; }
  33. E:only-of-type	--匹配父元素下使用同种标签的唯一一个子元素，等同于E:first-of-type E:last-of-type或 E:nth-of-type(1) E:nth-last-of-type(1)</br>
  34. E:root	--匹配文档的根元素，对于HTML文档，就是HTML元素</br>
  35. E:empty	--匹配一个不包含任何子元素的元素，注意，文本节点也被看作子元素</br>
- 36. E:not(s)	匹配不符合当前选择器的任何元素</br>
+ 36. E:not(s)	--匹配不符合当前选择器的任何元素</br>
 <b>注意：结构伪类选择器中，子元素的序号是从1开始的，所以，当参数n的计算结果为0 时，将不选择任何元素</b>
+
+<h4>4.3 其他伪类选择器</h4>
+37. E:target	--目标伪类选择器，匹配被相关URL指向的E元素</br>
+38. E:lang(language) --语言伪类选择器，匹配指定语言的元素</br>
+39. 
