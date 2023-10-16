@@ -61,8 +61,18 @@ h2[class*="title"] { color:red; }
  实例：</br>
  input[type=text]:focus { color:#000; background:#ffe; }</br>
 
- <h4>结构伪类选择器</h4>
+ <h4>4.2 结构伪类选择器</h4>
  24. E:first-child --匹配父元素的第一个子元素E</br>
  25. E:last-child --匹配父元素的最后一个子元素E</br>
  26. E:nth-child(n) --匹配其父元素的第n个子元素，第一个编号为1</br>
- 27. E:nth-last-child(n)	匹配其父元素的倒数第n个子元素，第一个编号为1</br>
+ 27. E:nth-last-child(n)	--匹配其父元素的倒数第n个子元素，第一个编号为1</br>
+ 28. E:nth-of-type(n)	--与:nth-child()作用类似，但是仅匹配使用同种标签的元素</br>
+ 29. E:nth-last-of-type(n)	--与:nth-last-child() 作用类似，但是仅匹配使用同种标签的元素</br>
+ 30. E:first-of-type	--匹配父元素下使用同种标签的第一个子元素，等同于E:nth-of-type(1)</br>
+ 31. E:last-of-type	--匹配父元素下使用同种标签的最后一个子元素，等同于E:nth-last-of-type(1)</br>
+ 32. E:only-child	--匹配父元素下仅有的一个子元素，等同于E:first-child E:last-child或 E:nth-child(1) E:nth-last-child(1)</br>
+ 33. E:only-of-type	--匹配父元素下使用同种标签的唯一一个子元素，等同于E:first-of-type E:last-of-type或 E:nth-of-type(1) E:nth-last-of-type(1)</br>
+ 34. E:root	--匹配文档的根元素，对于HTML文档，就是HTML元素</br>
+ 35. E:empty	--匹配一个不包含任何子元素的元素，注意，文本节点也被看作子元素</br>
+ 36. E:not(s)	匹配不符合当前选择器的任何元素</br>
+<b>注意：结构伪类选择器中，子元素的序号是从1开始的，所以，当参数n的计算结果为0 时，将不选择任何元素</b>
