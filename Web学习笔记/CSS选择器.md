@@ -6,10 +6,10 @@
 4.	#footer	 --id选择器，匹配所有id属性<b>等于</b>footer的元素
 
 实例：
-* { margin:0; padding:0; }<br/>
-p { font-size:2em; }<br/>
-.box { background:#eee; }<br/>
-#title { color:red; }<br/>
+* { margin:0; padding:0; }</br>
+p { font-size:2em; }</br>
+.box { background:#eee; }</br>
+#title { color:red; }</br>
 
 二、结构选择器
 
@@ -21,4 +21,5 @@ p { font-size:2em; }<br/>
 10. EF --交集选择器，同时匹配E元素和F元素，E和F之间用 . 分隔
 
 实例：
-div p { color:#f00; }<br/>
+div p { color:#f00; }</br>
+div > strong { color:#f00; }
