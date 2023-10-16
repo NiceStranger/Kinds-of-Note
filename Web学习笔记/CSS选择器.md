@@ -27,3 +27,8 @@ p ~ ul { background:#ff0; }</br>
 p + h2 { color:red; }</br>
 p , h2 { color:#fff; }</br>
 p.h2 { font-weight:bold; }
+
+三、属性选择器
+
+11. E[att] --属性的或运算，匹配所有具有att属性的E元素，不考虑它的值
+12. 
