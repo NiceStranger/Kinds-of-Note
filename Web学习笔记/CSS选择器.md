@@ -10,7 +10,7 @@
 
 实例：
 
-	&#42; { margin:0; padding:0; }
+	* { margin:0; padding:0; }
 
 	p { font-size:2em; }
 
