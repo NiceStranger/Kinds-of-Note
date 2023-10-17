@@ -80,4 +80,6 @@ h2[class*="title"] { color:red; }
 <h4>4.3 其他伪类选择器</h4>
 37. E:target	--目标伪类选择器，匹配被相关URL指向的E元素</br>
 38. E:lang(language) --语言伪类选择器，匹配指定语言的元素</br>
-39. 
+39. E:checked --选中状态伪类选择器，匹配表单中被选中的radio（单选框）或checkbox（复选框）元素</br>
+40. E:enabled --可用状态伪类选择器，匹配表单中激活的元素</br>
+41. E:disabled --不可用状态伪类选择器，匹配表单中禁用的元素</br>
