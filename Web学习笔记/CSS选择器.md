@@ -77,9 +77,36 @@ h2[class*="title"] { color:red; }
  36. E:not(s)	--匹配不符合当前选择器的任何元素</br>
 <b>注意：结构伪类选择器中，子元素的序号是从1开始的，所以，当参数n的计算结果为0 时，将不选择任何元素</b>
 
+实例：</br>
+p:nth-child(3) { color:#f00; }
+
+p:nth-child(odd) { color:#f00; }
+
+p:nth-child(even) { color:#f00; }
+
+p:nth-child(3n+0) { color:#f00; }
+
+p:nth-child(3n) { color:#f00; }
+
+p:nth-child(2n+11) { background:#ff0; }
+
+p:nth-last-child(2) { background:#ff0; }
+
+p:last-child { background:#ff0; }
+
+p:only-child { background:#ff0; }
+
+p:empty { background:#ff0; }
+
 <h4>4.3 其他伪类选择器</h4>
 37. E:target	--目标伪类选择器，匹配被相关URL指向的E元素</br>
 38. E:lang(language) --语言伪类选择器，匹配指定语言的元素</br>
 39. E:checked --选中状态伪类选择器，匹配表单中被选中的radio（单选框）或checkbox（复选框）元素</br>
 40. E:enabled --可用状态伪类选择器，匹配表单中激活的元素</br>
 41. E:disabled --不可用状态伪类选择器，匹配表单中禁用的元素</br>
+
+实例：</br>
+input[type="text"]:disabled { background:#ddd; }
+
+<h3>五、 伪元素选择器</h3>
+
